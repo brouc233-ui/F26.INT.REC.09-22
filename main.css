@@ -1,0 +1,43 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    linear-gradient(180deg, #73c9f4 0%, #b9e5f8 48%, #f4fbff 100%);
+}
+
+body::before,
+body::after {
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  opacity: 0.72;
+  filter: blur(2px);
+}
+
+body::before {
+  top: 10%;
+  left: -8%;
+  width: 116%;
+  height: 24%;
+  background:
+    radial-gradient(ellipse at 12% 68%, #ffffff 0 10%, transparent 10.5%),
+    radial-gradient(ellipse at 22% 48%, #ffffff 0 14%, transparent 14.5%),
+    radial-gradient(ellipse at 32% 68%, #ffffff 0 11%, transparent 11.5%),
+    radial-gradient(ellipse at 78% 62%, #ffffff 0 13%, transparent 13.5%),
+    radial-gradient(ellipse at 89% 45%, #ffffff 0 10%, transparent 10.5%);
+}
+
+body::after {
+  right: -12%;
+  bottom: 4%;
+  width: 108%;
+  height: 22%;
+  opacity: 0.42;
+  background:
+    radial-gradient(ellipse at 18% 58%, #ffffff 0 12%, transparent 12.5%),
+    radial-gradient(ellipse at 30% 38%, #ffffff 0 16%, transparent 16.5%),
+    radial-gradient(ellipse at 42% 62%, #ffffff 0 11%, transparent 11.5%),
+    radial-gradient(ellipse at 76% 52%, #ffffff 0 14%, transparent 14.5%);
+}
